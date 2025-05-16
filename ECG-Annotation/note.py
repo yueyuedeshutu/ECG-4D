@@ -5,7 +5,6 @@
 从 machine_measurements.csv、record_list_hr_hrv_test.csv、
 record_list_interval_test.csv、record_list_morphology_test.csv、
 record_list_structural_test.csv 中读取数据，按照模板生成注释，
-并保存至 /gpfsdata/home/liuxinyue/ECG/note 目录下，文件名从 0000000.json 开始。
 使用所有可用 CPU 并行处理，并通过 tqdm 显示进度。
 """
 
@@ -201,12 +200,12 @@ def process_idx(idx):
 
 if __name__ == '__main__':
     # —— 加载 CSV 数据 —— #
-    machine_csv    = '/gpfsdata/home/liuxinyue/ECG/result/machine_measurements.csv'
-    hrhrv_csv      = '/gpfsdata/home/liuxinyue/ECG/result/record_list_hr_hrv.csv'
-    interval_csv   = '/gpfsdata/home/liuxinyue/ECG/result/record_list_interval.csv'
-    morphology_csv = '/gpfsdata/home/liuxinyue/ECG/result/record_list_morphology.csv'
-    structural_csv = '/gpfsdata/home/liuxinyue/ECG/result/record_list_structural.csv'
-    output_dir     = '/gpfsdata/home/liuxinyue/ECG/note'
+    machine_csv    = './machine_measurements.csv'
+    hrhrv_csv      = './record_list_hr_hrv.csv'
+    interval_csv   = './record_list_interval.csv'
+    morphology_csv = './record_list_morphology.csv'
+    structural_csv = './record_list_structural.csv'
+    output_dir     = './ECG/note'
     os.makedirs(output_dir, exist_ok=True)
 
     df_machine  = pd.read_csv(machine_csv,    parse_dates=['ecg_time'], low_memory=False)
