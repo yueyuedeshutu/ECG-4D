@@ -127,9 +127,9 @@ def worker_process(args):
 
 def main():
     # 配置参数
-    mimic_root = "/gpfsdata/home/liuxinyue/ECG/mimic-iv-ecg-diagnostic-electrocardiogram-matched-subset-1.0"
-    record_list = "/gpfsdata/home/liuxinyue/ECG/mimic-iv-ecg-diagnostic-electrocardiogram-matched-subset-1.0/record_list.csv"
-    output_dir = "/gpfsdata/home/liuxinyue/ECG/data/image"
+    mimic_root = "./mimic-iv-ecg-diagnostic-electrocardiogram-matched-subset-1.0"
+    record_list = "./mimic-iv-ecg-diagnostic-electrocardiogram-matched-subset-1.0/record_list.csv"
+    output_dir = "./data/image"
     
     # 并行配置
     num_processes = multiprocessing.cpu_count()  # 根据CPU核心数自动设置
