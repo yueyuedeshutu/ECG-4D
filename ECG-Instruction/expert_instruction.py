@@ -13,8 +13,8 @@ def safe_fmt(val):
         return "0.00"
 
 # 输入输出路径配置
-csv_path    = '/gpfsdata/home/liuxinyue/ECG/9.instruction_youhua/note_split/note_paths_split_4.csv'
-output_dir  = '/gpfsdata/home/liuxinyue/ECG/9.instruction_youhua/instruction_split'
+csv_path    = './note_split/note_paths_split_4.csv'
+output_dir  = './instruction_split'
 os.makedirs(output_dir, exist_ok=True)
 output_path = os.path.join(output_dir, 'mimic_data_part_4.json')
 error_log   = os.path.join(output_dir, 'errors.log')
