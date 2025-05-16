@@ -6,9 +6,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 配置参数
 DEEPSEEK_API_KEY = "your api_key"
-NOTE_DIR = "/gpfsdata/home/liuxinyue/ECG/ECG_Instruction/MIMIC_IV_ECG/note"
-IMAGE_DIR = "/gpfsdata/home/liuxinyue/ECG/ECG_Instruction/MIMIC_IV_ECG/image"
-OUTPUT_DIR = "/gpfsdata/home/liuxinyue/ECG/ECG_Instruction/MIMIC_IV_ECG/llm_instruction"
+NOTE_DIR = "./ECG_Instruction/MIMIC_IV_ECG/note"
+IMAGE_DIR = "./ECG_Instruction/MIMIC_IV_ECG/image"
+OUTPUT_DIR = "./ECG_Instruction/MIMIC_IV_ECG/llm_instruction"
 MAX_FILES_PER_LARGE_BATCH = 10000
 BATCH_SIZE = 100
 MAX_WORKERS = 20  # 并行线程数
