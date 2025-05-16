@@ -152,8 +152,8 @@ def generate_clinical_report(data):
     return full_report
 
 def main():
-    input_dir = "/gpfsdata/home/liuxinyue/ECG/10.COT/normal/note_normal"
-    output_csv = "/gpfsdata/home/liuxinyue/ECG/10.COT/build_cot/input_final_normal.csv"
+    input_dir = "./ECG/10.COT/normal/note_normal"
+    output_csv = "./ECG/10.COT/build_cot/input_final_normal.csv"
     
     records = []
     
