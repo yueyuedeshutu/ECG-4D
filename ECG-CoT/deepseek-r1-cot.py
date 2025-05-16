@@ -114,8 +114,8 @@ class ECGProcessor:
 
 if __name__ == "__main__":
     # 配置参数
-    INPUT_FILE = "/gpfsdata/home/liuxinyue/ECG/10.COT/build_cot/input_final_normal.csv"
-    OUTPUT_FILE = "/gpfsdata/home/liuxinyue/ECG/10.COT/build_cot/output_final_normal.csv"
+    INPUT_FILE = "./build_cot/input_final_normal.csv"
+    OUTPUT_FILE = "./build_cot/output_final_normal.csv"
     API_KEY = "api_key"  # 替换为实际API密钥
 
     processor = ECGProcessor(INPUT_FILE, OUTPUT_FILE, API_KEY)
